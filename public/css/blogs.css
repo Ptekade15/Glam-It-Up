@@ -1,0 +1,57 @@
+a { 
+    
+    cursor: pointer;
+}
+
+.blog-grid-container {
+    background-color: white;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 80vh 80vh;
+    grid-gap: 2rem;
+    padding: 25px;
+    margin-left: auto;
+    
+}
+
+.blog-post {
+    
+    text-align: center;
+    background-image: linear-gradient(to bottom right, violet,pink,#ffffb5,pink, #A020F0 );
+    font-family: 'Brush Script MT', cursive;
+    
+}
+
+.blog-cover-img {
+    width: 100%;
+    padding: 10px;
+}
+
+.blog-content {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.blog-content-description {
+    margin: 2vh 0 0 0;
+}
+
+.blog-content-description a{
+    text-shadow: white;
+    color: seagreen;
+}
+
+.blog-content-description a:hover{
+    color: springgreen;
+}
+
+@media screen and (max-width: 1200px) {
+    .blog-grid-container {
+        grid-template-columns: auto auto;
+        margin: 12vh 5vh;
+    }
+
+    .blog-post {
+        grid-column:  1 / span 2;
+}
+}

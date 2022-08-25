@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://allfont.net/allfont.css?fonts=raleway-bold" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+<body>
+
+        <%- include('includes/nav') %>
+
+    <div class="contact">
+        <h1 class=" text-center">Contact Us</h1>
+    </div>
+    
+        <div class="container1 ">
+            <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">Surkhet, NP12</div>
+                <div class="text-two">Birendranagar 06</div>
+                </div>
+                <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+9194 5621 7354</div>
+                <div class="text-two">+9197 3498 2348</div>
+                </div>
+                <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">glamitup@gmail.com</div>
+                <div class="text-two">info.glamitup@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Contact our Team</div>
+                <p class="flex justify-center">Our team is happy to answer your queries. Fill out the form and we'll be in touch as soon as possible.</p>
+            <form action="/contactus" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <input type="text" name="email" placeholder="Enter your email">
+                </div>
+                <div class="input-box message-box">
+                    <input type="text" name="query" placeholder="Enter the reason">
+                </div>
+                <div class="button">
+                <input type="submit" value="Send Now" >
+                </div>
+            </form>
+            </div>
+            </div>
+        </div>
+
+   
+<%- include('includes/footer') %>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditioner</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+<body>
+  <%- include('includes/nav') %>
+    <h1 class="title">All Conditioner Products</h1>
+  <div class="container-p">
+    <div class="cards-section">
+      <%conditioners.forEach(function(conditioner){%>
+        <div class="card">
+          <img class="image" src=<%=conditioner.imageUrl %> alt="">
+          <p class="name">
+            <%= conditioner.name %>
+          </p>
+          <p class="desp">
+            <%= conditioner.description.substring(0, 50) %>
+          </p>
+          <p class="price">
+            Rs. <%= conditioner.price %>
+          </p>
+          <button class="product-btn"><a href="/conditionerallproducts/<%= conditioner._id %>">View Product</a></button>
+        </div>
+        <%});%>
+    </div>
+
+    <button class="product-btn home-btn"><a href="/">Go Home</a></button>
+  </div>  
+  <%- include('includes/footer') %>
+</body>
+</html>

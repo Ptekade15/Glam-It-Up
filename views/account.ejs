@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLAM-IT-UP | Accounts</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="/css/account.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://allfont.net/allfont.css?fonts=raleway-bold" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation menu -->
+  <%- include('includes/nav') %>
+    <div class="dashboard">
+
+    </div>
+
+    <div class="profile">
+
+
+
+      <div class="lhs">
+          <img src="./images/profile.png" alt='profile'height="200px" width="200px">
+          <figcaption>Hiii,<%= username %></figcaption>
+
+      </div>
+
+      <div class="rhs">
+
+          <h2>ACCOUNT DETAILS</h2>
+              <br>
+
+          <h3>NAME</h3>
+          <p><%= username %></p>
+
+          <h3>EMAIL-ID</h3>
+          <p><%= email %></p>
+
+          <h3>MOBILE NO.</h3>
+          <p><%= mobile %></p>
+
+
+          <h3>ADDRESS</h3>
+          <p><%= address %></p>
+
+          
+      </div>
+
+        <button class="logout"><a href="/logout">Logout</a></button>
+      
+
+      
+          
+  </div>
+
+    <!-- Navigation menu -->
+    <%- include('includes/footer') %>
+    
+</body>
+
+</html>

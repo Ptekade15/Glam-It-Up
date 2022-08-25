@@ -1,0 +1,101 @@
+.cards-section {
+    margin: 80px auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1.3fr);
+  }
+  
+  .card {
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.5s;  
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: peachpuff;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .title {
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    padding-bottom: 2rem;
+  }
+  
+  .title::after {
+    content: '';
+    background-image: url(../images/horizontal-design.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+  }
+  
+  .image {
+    margin-top: 7px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .desp {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .price {
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+  }
+  
+  .product-btn {
+    padding: 10px 25px;
+    background-color: gainsboro;
+    cursor: pointer;
+    transition: 0.3s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 25px;
+  }
+  
+  .home-btn {
+    padding: 15px 30px;
+  }
+  
+  .product-btn:hover {
+    opacity: 0.8;
+    background-color: #d4af37;
+  }
+  
+  .product-btn > a {
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    color: black;
+    font-size: 18px;
+  }
